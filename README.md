@@ -12,7 +12,7 @@
 #### 反馈和建议: 微信加xiyou51666
 
 ## 版权声明
-[MIT](https://github.com/WenJieLife/WuKong)
+[MIT](https://github.com/WenJieLife/WuKong/blob/main/LICENSE)
 copyright: © 2021 Terry Li
 
 ## Project setup
