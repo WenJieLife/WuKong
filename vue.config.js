@@ -1,17 +1,21 @@
 module.exports = {
     publicPath: './',
-    // 所有 webpack-dev-server 的选项都支持。
     devServer: {
         host: "localhost",
-        port: 8080, // 端口号
-        open: true, //配置自动启动浏览器
+        port: 8080, //frontend port
+        open: true, //auto open browser
 
-        // 配置多个代理
+        // overlay: {
+        //     warnings: false,
+        //     errors: true
+        // },
+        // domain proxy
         proxy: {
             "/api": {
-                target: "http://127.0.0.1:8000",
+                target: process.env.VUE_APP_URL,
+                changeOrigin: true, //Cross domain
                 pathRewrite: {
-                    "^/api": ""
+                    "^/api": "/api"
                 }
             }
         }

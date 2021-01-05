@@ -1,12 +1,11 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-// import Home from '@/views/Home.vue'
 import MagicMock from '@/views/MagicMock.vue'
 import PerformanceAssessment from '@/views/Performance.vue'
 // import UseCaseReactor from '@/views/UseCaseReactor.vue'
 import UseCaseReactor from '@/views/caseManagement/case_design.vue'
 import UseCaseLaunch from '@/views/caseLaunch/caseL.vue'
 import WKResultsAnalysis from '@/views/results/result_of_chart.vue'
-// import NavList from '@/views/NavList.vue'
+
 import Dashboard from '@/views/dashboard/Dashboard.vue'
 import { getUser } from "@/utils/lib/user";
 const routes = [

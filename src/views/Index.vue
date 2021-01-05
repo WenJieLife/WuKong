@@ -7,7 +7,7 @@
       @mouseleave="close"
     >
       <el-menu
-        class="muf_menu"
+        class="wk_menu"
         @select="handleSelect"
         mode="vertical"
         :collapse="data.menu_pull_open"
@@ -192,7 +192,7 @@ export default {
 /* .menu-logo {
   height: 58px;
 } */
-.muf_menu {
+.wk_menu {
   margin: 55px 5px 5px 5px;
   padding-left: 0;
   background-color: #fff;

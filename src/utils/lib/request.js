@@ -13,7 +13,7 @@ fly.config.timeout = process.env.VUE_APP_API_TIMEOUT;
 
 //添加请求拦截器
 fly.interceptors.request.use((request) => {
-    request.headers["X-Tag"] = "mufaStar";
+    request.headers["X-Tag"] = process.env.VUE_APP_TITLE || 'WuKong';
     if (request.method !== "GET" && !request.headers["Content-Type"]) {
         request.headers["Content-Type"] = "application/json;charset=utf-8";
 
