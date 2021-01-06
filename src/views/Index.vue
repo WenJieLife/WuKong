@@ -51,7 +51,7 @@
         <el-divider direction="vertical"></el-divider>
         <div>
           <img
-            src="../assets/wk128.png"
+            src="../assets/wk_64.png"
             alt="logo"
             style="width: 32px; height: 32px"
           />

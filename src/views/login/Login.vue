@@ -1,5 +1,6 @@
 <template>
   <div class="login-plan">
+    <div class="login-bg"></div>
     <div class="login-container">
       <el-form
         ref="loginForm"
@@ -10,7 +11,7 @@
         label-position="left"
       >
         <div class="title-container">
-          <h3 class="title">{{title}}</h3>
+          <h3 class="title">{{ title }}</h3>
         </div>
 
         <el-form-item prop="username">
@@ -73,7 +74,7 @@ import { login } from "@/utils/api/login";
 
 export default {
   name: "Login",
-  
+
   data() {
     const validateUsername = (rule, value, callback) => {
       if (!validUsername(value)) {
@@ -105,7 +106,7 @@ export default {
       loading: false,
       passwordType: "password",
       redirect: undefined,
-      title: process.env.VUE_APP_TITLE
+      title: process.env.VUE_APP_TITLE,
     };
   },
   // watch: {
@@ -159,13 +160,25 @@ $bg: #2d3a4b;
 $dark_gray: #889aa4;
 $light_gray: #289dde;
 
+body{
+  height: 100%;
+  width: 100%;
+}
+
 .login-plan {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #0a90a8, #0a75a3);
+}
+.login-bg {
   position: absolute;
   width: 100%;
   height: 100%;
   background-image: url("../../assets/white.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .title {
   width: 100%;
   line-height: 20px;

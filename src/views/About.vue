@@ -6,9 +6,9 @@
           <h1 style="margin: 10px; font-size: 26px">
             智能测试中台 - <span style="color: red">悟空</span>
             <img
-              src="../assets/wk128.png"
+              src="../assets/wk_64.png"
               alt="logo"
-              style="width: 26px; height: 26px;"
+              style="width: 25px; height: 25px;"
             />
           </h1>
           <div >
