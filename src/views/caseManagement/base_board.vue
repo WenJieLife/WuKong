@@ -81,7 +81,7 @@ export default {
 
     .board-item {
       cursor: pointer;
-      width: 100%;
+      width: auto;
       height: 64px;
       margin: 5px 0;
       background-color: #fff;

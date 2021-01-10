@@ -1,17 +1,17 @@
 <template>
-  <div class="login-plan">
-    <div class="login-bg"></div>
-    <div class="login-container">
+  <div class="WK-login-plan">
+    <div class="WK-login-bg"></div>
+    <div class="WK-login-container">
       <el-form
         ref="loginForm"
         :model="loginForm"
         :rules="loginRules"
-        class="login-form"
+        class="WK-login-form"
         auto-complete="on"
         label-position="left"
       >
-        <div class="title-container">
-          <h3 class="title">{{ title }}</h3>
+        <div class="WK-title-container">
+          <h3 class="WK-title">{{ title }}</h3>
         </div>
 
         <el-form-item prop="username">
@@ -160,26 +160,16 @@ $bg: #2d3a4b;
 $dark_gray: #889aa4;
 $light_gray: #289dde;
 
-body{
-  height: 100%;
-  width: 100%;
-}
-
-.login-plan {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom right, #0a90a8, #0a75a3);
-}
-.login-bg {
+.WK-login-bg {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../../assets/white.jpg");
+  background-image: url("../../assets/bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.title {
+.WK-title {
   width: 100%;
   line-height: 20px;
   text-align: center;
@@ -188,17 +178,19 @@ body{
   font-weight: bold;
   // border-bottom: 1px solid #ddd;
 }
-.login-container {
+.WK-login-container {
+  display: block;
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 350px;
-  margin: -190px 0 0 -175px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.5);
+  width: 430px;
+  transform: translate(-50%, -61.8%);
+  // margin: -190px 0 0 -175px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
   overflow: hidden;
 }
-.login-form {
-  padding: 25px 25px;
+.WK-login-form {
+  padding: 16px 30px;
 }
 </style>

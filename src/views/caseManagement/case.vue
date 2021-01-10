@@ -1,8 +1,7 @@
 <template>
   <el-form
       inline
-      :label-position="'left'"
-      label-width="80px">
+      :label-position="'left'">
     <el-form-item label="院线">
       <el-select
           style="width: 200px;"
@@ -382,7 +381,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>

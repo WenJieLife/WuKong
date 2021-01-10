@@ -133,7 +133,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+
+
+
 .el-dropdown-link {
   cursor: pointer;
   /* color: #ffffff; */
@@ -147,9 +150,9 @@ export default {
   width: auto;
   margin-bottom: 13px;
   border-radius: 5px;
+  border:2px solid #a1a1a1;
   /* text-align: initial; */
   line-height: 50px;
-  /* padding: 3px, 3px; */
 }
 /* .dropdown-position{
     margin: auto;

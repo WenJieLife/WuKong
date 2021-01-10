@@ -1,37 +1,35 @@
 <template>
-  <div class="case_design">
-    <div class="design_manager">
+  <div class="WKCaseDesign">
+    <div class="WKDesignManager">
       <div class="components-container board">
         <baseboard
           :key="1"
           :list="list1"
           :group="group"
-          class="design_board"
-          header-text="编排器"
+          class="WKDesignBoard"
+          header-text="用例执行流程编排"
         />
-        <!-- <baseboard
-          :key="2"
-          :list="list2"
-          :group="group"
-          class="module_selector"
-          header-text="模块库"
-        /> -->
       </div>
-    </div>
-
-    <div class="module_selector">
-      <div class="components-container board">
-        <baseboard
-          :key="1"
-          :list="list2"
-          :group="group"
-          class="design_selector"
-          header-text="模块库"
-        />
+      <div class="WKCaseSave">
+        <el-row>
+          <el-button type="warning">重置</el-button>
+          <el-button type="primary">保存</el-button>
+        </el-row>
       </div>
     </div>
   </div>
-  <div class="board control">控制面板</div>
+  <div class="WKUseGlobalModules">
+    <div class="components-container board">
+      <baseboard
+        :key="1"
+        :list="list2"
+        :group="group"
+        class="WKUseModules"
+        header-text="公共模块库"
+      />
+    </div>
+  </div>
+  <!-- <div class="WKCaseInfo">输出</div> -->
 </template>
 <script>
 import baseboard from "./base_board";
@@ -73,33 +71,44 @@ export default {
   user-select: none;
 }
 
-.case_design {
-  display: flex;
-  height: 60%;
+.WKCaseDesign {
+  // display: flex;
+  float: left;
+  width: 61.8%;
 }
-
+.WKCaseSave {
+  margin-top: 20px;
+}
+.WKCaseInfo {
+  margin-top: 20px;
+  height: auto;
+  border-radius: 3px;
+  background: rgb(170, 166, 166);
+}
 .board {
-  margin-left: 20px;
+  // margin-left: 20px;
   // display: flex;
   // justify-content: space-around;
   // flex-direction: row;
   // align-items: flex-start;
 }
 
-.design_board {
+.WKDesignBoard {
   min-width: 500px;
   min-height: 100px;
   height: auto;
   overflow: hidden;
 }
-.module_selector {
+.WKUseGlobalModules {
+  float: right;
 }
 
-.design_selector {
+.WKUseModules {
   // background: rgb(58, 55, 55);
+  min-width: 400px;
 }
 
-.control{
+.control {
   width: 100%;
   height: auto;
   border-radius: 3px 3px 0 0;
